@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08input01.html</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:8080/Html5/abc.do" method="get">
+
+        이름 1: <input type="text" name="name01" value="홍길동" /> <br/>
+        이름 2: <input type="text" name="name02" /> <br/>
+        <label for="name3">이름3:</label>
+        <input type="text" id="name3" name="name03" /> <br/> 
+        
+        <hr/>
+
+        취미는 ? <br>
+        독서 <input type="checkbox" name="reading" value="reading" checked="checked"/>
+        야구 <input type="checkbox" name="baseball" value="baseball" checked />
+        축구 <input type="checkbox" name="football" id="football" /> <br>
+
+        <hr>
+
+        성별 ?<br>
+        남자 <input type="radio" name="sex" value="male" checked />
+        여자 <input type="radio" name="sex" value="female" /> <br>
+
+        <hr/>
+
+        사진 : <input type="file" name="picture" /> <br/>
+        화면에는 안보임 : <input type="hidden" name="hideData" value="숨긴Data"/> <br />
+        
+        <hr/>
+
+        비밀번호01 : <input type="password" name="password01" value="1234" /> <br/>
+        비밀번호02 : <input type="password" name="password02" /> <br/>
+
+        <hr/>
+        <input type="reset" value="다시쓰기"/><br/>
+        <input type="submit" value="Data보내기"/> <br />
+        <input type="button" value="그냥 button" />
+    </form>
+
+    <hr size="5" color="red"/>
+    <h3>위의 input Tag 는 HTML4에서 지원 / 아래는 HTML5에서 추가지원 하는 type</h3>
+    
+    <hr size="5" color="red"/>
+
+    input type="color": <input type="color"/><br/>
+    date = <input type="date"/><br/>
+    datetime = <input type="datetime"/> <br/>
+    datetime-local : <input type="datetime-local"/> <br/>
+
+    <h3>
+        Browser 지원 유뮤 확인필요<br/>
+        W3C는 HTML 표준만 제정 강제하지 않으며, 이로인한 웹브라우저 전쟁이 시작됨
+    </h3>
+    
+</body>
+</html>
